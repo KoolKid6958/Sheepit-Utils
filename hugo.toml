@@ -1,0 +1,29 @@
+baseURL = 'https://sheepit.koolkid6958.dev/'
+languageCode = 'en-us'
+title = 'Sheepit-Utils'
+theme = 'hextra'
+
+# Allow html in the .md files
+[markup.goldmark.renderer]
+unsafe = true
+
+[menu]
+[[menu.main]]
+name = "Docs"
+pageRef = "/docs"
+weight = 1
+
+[[menu.main]]
+name = "Search"
+weight = 2
+[menu.main.params]
+type = "search"
+
+[params]
+[params.navbar]
+displayTitle = true
+displayLogo = false
+
+[params.page]
+[params.page.tabs]
+sync = true
