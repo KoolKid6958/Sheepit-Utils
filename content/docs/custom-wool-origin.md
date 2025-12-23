@@ -29,7 +29,7 @@ http {
 
             proxy_cache sheepit_cache;
 
-            proxy_cache_valid 200 302 10m;
+            proxy_cache_valid 200 302 720h;
             proxy_cache_valid 404 1m;
 
 	        add_header X-Proxy-Cache $upstream_cache_status always;
