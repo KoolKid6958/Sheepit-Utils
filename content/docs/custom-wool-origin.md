@@ -45,7 +45,6 @@ http {
 	        add_header X-Proxy-Cache $upstream_cache_status always;
             proxy_pass https://sheepit-main-weur-projects.sheepit-r2-binaries.win;
 
-            proxy_cache_bypass $http_cache_control;
             proxy_ignore_headers Cache-Control Expires Set-Cookie;
         }
     }
